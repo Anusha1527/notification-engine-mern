@@ -27,7 +27,9 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-
+app.get("/health", (req, res) => {
+  res.json({ status: "OK", service: "Notification Engine API" });
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
