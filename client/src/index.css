@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* global overrides */
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
