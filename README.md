@@ -1,4 +1,10 @@
 # 🚀 AI Notification Decision Engine — MERN Stack
+![Status](https://img.shields.io/badge/Status-Live-success)
+![Frontend](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)
+![Backend](https://img.shields.io/badge/Backend-Render-purple)
+![Database](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)
+![AI](https://img.shields.io/badge/AI-Real%20Integration-blue)
+![License](https://img.shields.io/badge/Build-Test%20Submission-Cyepro-orange)
 
 > A production-grade **AI-driven Notification Decision System** built using the **MERN Stack (MongoDB, Express, React, Node.js)** with real decision intelligence, fail-safe architecture, and responsive dashboard UI.
 
@@ -417,3 +423,15 @@ This repository includes:
 - ✅ DEPLOYMENT.md
 
 ---
+---
+
+## 🌐 Live Deployment
+
+### Frontend (Vercel)
+👉 https://notification-engine-mern.vercel.app
+
+### Backend API (Render)
+👉 https://notification-engine-api-9zyy.onrender.com
+
+### Health Check Endpoint
+👉 https://notification-engine-api-9zyy.onrender.com/health

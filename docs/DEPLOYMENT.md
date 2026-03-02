@@ -95,3 +95,20 @@ System available publicly with:
 ✅ Live backend  
 ✅ Cloud database  
 ✅ Production environment
+
+## Free Tier Behavior (Render)
+
+The backend is deployed using Render's free web service tier.
+
+Render automatically spins down inactive services after 15 minutes
+of inactivity to conserve resources.
+
+When a new request arrives:
+- The service automatically wakes up
+- Cold start time may take 30–60 seconds
+
+This does NOT affect functionality and is expected behavior
+for free-tier deployments.
+
+For production environments, upgrading to an always-on instance
+removes cold starts completely.
