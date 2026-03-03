@@ -12,20 +12,27 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        { email, password }
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/auth/login`,
+        {
+          email,
+          password,
+        }
       );
 
-      console.log(res.data);
+      console.log("Login response:", response.data);
 
       alert("Login successful");
-
-      // ✅ Redirect after login
       navigate("/send");
 
-    } catch (err) {
-      alert("Invalid credentials");
+    } catch (error) {
+      console.error("Login error:", error);
+
+      if (error.response) {
+        alert(error.response.data?.message || "Invalid credentials");
+      } else {
+        alert("Server not reachable. Please try again.");
+      }
     }
   };
 
@@ -52,13 +59,13 @@ export default function Login() {
             <div onClick={fillAdmin} className="demo-item">
               <h4>Admin</h4>
               <span>admin@cyepro.com</span>
-              <span>/Admin@123</span>
+              <span>Admin@123</span>
             </div>
 
             <div onClick={fillOperator} className="demo-item">
               <h4>Operator</h4>
               <span>operator@cyepro.com</span>
-              <span>/Operator@123</span>
+              <span>Operator@123</span>
             </div>
           </div>
         </div>
