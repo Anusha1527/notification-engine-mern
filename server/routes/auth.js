@@ -1,7 +1,8 @@
+import express from "express";
+const router = express.Router();
+
 router.post("/login", (req, res) => {
   const { email, password } = req.body;
-
-  console.log("Received:", email, password);
 
   if (
     (email === "admin@cyepro.com" && password === "Admin@123") ||
@@ -12,3 +13,5 @@ router.post("/login", (req, res) => {
 
   res.status(401).json({ message: "Invalid credentials" });
 });
+
+export default router;
