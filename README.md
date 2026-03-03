@@ -361,8 +361,8 @@ Each API request produces a computed result based on input data.
 
 | Service         | URL                                                  |
 |-----------------|------------------------------------------------------|
-| MERN Frontend   | https://notification-engine.vercel.app               |
-| MERN Backend    | https://notification-engine-mern.onrender.com        |
+| MERN Frontend   | https://notification-engine-mern-wheat.vercel.app/   |
+| MERN Backend    | https://notification-engine-mern-backend.onrender.com|
 | Health Endpoint | https://notification-engine-mern.onrender.com/health |
 
 ---
